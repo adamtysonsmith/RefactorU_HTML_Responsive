@@ -1,0 +1,96 @@
+/*******************************************/
+/* HTML Exercise 5: Responsive Web Design */
+/*******************************************/
+
+body {
+    max-width: 960px;
+    width: 70%;
+    margin: auto;
+    font-family: Helvetica;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: lightslategray;
+    opacity: 0.4;
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 30px;
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+nav li a:hover {
+    color: black;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #515151;
+}
+h2 {
+    color: #515151;
+}
+p {
+    font-size: 18px;
+    color: #333333;
+}
+
+.featured-image {
+    float: left;
+    margin: 0px 20px 20px 0px;
+}
+
+
+
+/* Media Queries */
+/*******************************************/
+
+/* -- Max Width Media Query for Mobile -- */
+@media (max-width: 582px) {
+    nav {
+        text-align: left;
+    }
+    nav li {
+        display: block;
+        margin-left: 12px;
+    }
+    .container {
+        margin-top: 230px;
+    }
+    .content {
+        clear: left;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .gallery {
+        width: 350px;
+    }
+    
+}
+
+/* Min Width Media Query for Tablet */
+@media (min-width: 582px) and (max-width: 800px) {
+    .content {
+        clear: left;
+    }
+    
+}
+
+/* Min Width Media Query for Desktop */
+@media (min-width: 960px) {
+    
+}
